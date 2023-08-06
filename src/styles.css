@@ -69,18 +69,18 @@ body {
 
 .presupuesto_ingreso {
     margin-bottom: 10px;
-    background-color: #28B9B5;
+    background-color: #4adbd6;
 }
 
 .presupuesto_egreso {
-    background-color: #FF5049;
+    background-color: #e39a97;
 }
 
 .presupuesto_ingreso--texto,
 .presupuesto_egreso--text {
     float: left;
-    font-size: 13px;
-    color: #444;
+    font-size: 15px;
+    color: #373737;
     margin-top: 2px;
 }
 

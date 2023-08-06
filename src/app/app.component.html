@@ -1,11 +1,19 @@
-<app-cabecero></app-cabecero>
+<!--Debemos enviar la información del componente padre (app.component)
+    al componente hijo (cabecero.component)
+    Se hace uso de property binding-->
+<app-cabecero
+[presupuestoTotal]="getPresupuestoTotal()"
+[egresoTotal]="getEgresoTotal()"
+[ingresoTotal]="getIngresoTotal()"
+[porcentajeTotal]="getPorcentajeTotal()"
+></app-cabecero>
 
 <app-formulario></app-formulario>
 
-
-
-
   <div class="contenedor limpiarEstilos">
       <app-ingreso></app-ingreso>
-      <app-egreso></app-egreso>
+      <app-egreso
+      [porcentajeTotal]="getPorcentajeTotal()"
+      [egresoTotal]="getEgresoTotal()">
+    </app-egreso>
   </div>
