@@ -61,7 +61,7 @@ export class AppComponent {
   //a los ingresos
   getPorcentajeTotal(){
     let porcentajeTotal:number = 0;
-    porcentajeTotal =  this.getEgresoTotal()/this.getIngresoTotal()*100;
+    porcentajeTotal =  this.getEgresoTotal()/this.getIngresoTotal();
     return porcentajeTotal;
   }
 
