@@ -32,7 +32,7 @@ export class IngresoComponent implements OnInit {
   //Elimina del arreglo el ingreso que recibe como
   //parámetro en el html.
   eliminarIngreso(ingreso: Ingreso): void{
-    this.ingresoServicio.eliminar(ingreso);
+    this.ingresoServicio.eliminarIngreso(ingreso);
   }
 
 }

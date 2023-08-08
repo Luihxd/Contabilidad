@@ -18,4 +18,8 @@ export class EgresoServicio{
     this.egresos.splice(indice, 1);
   }
 
+  agregarEgreso(descripcion: string, valor: number){
+    this.egresos.push(new Egreso(descripcion, valor));
+  }
+
 }
