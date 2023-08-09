@@ -1,34 +1,28 @@
 <form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm">
   <div class="agregar">
-      <div class="agregar_contenedor">
+    <div class="agregar_contenedor">
 
-          <select [ngClass]="{redfocus:tipo ==='egresoOperacion'}"
-              (change)="tipoDeOperacion($event)" class="agregar_tipo">
-              <option value="ingresoOperacion" selected>Ingreso</option>
-              <option value="egresoOperacion">Egreso</option>
-          </select>
-           <!--El type="submit" hace que reconozca el enter
-              cuando se capturen los datos-->
-          <input [ngClass]="{redfocus:tipo ==='egresoOperacion'}"
-          type="text" class="agregar_descripcion"
-          name="descripcionInput"
-          [(ngModel)] = "descripcionInput"
-          placeholder="Agregar Descripción"
-          required>
+      <select [ngClass]="{redfocus:tipo ==='egresoOperacion'}" (change)="tipoDeOperacion($event)" class="agregar_tipo">
+        <option value="ingresoOperacion" selected>Ingreso</option>
+        <option value="egresoOperacion">Egreso</option>
+      </select>
+      <!--ngModel permite el two-way binding para que guarde el
+          contenido del input como valor de la variable
+          required hace que no se pueda hacer subdmit si este input
+          está vacío-->
+      <input [ngClass]="{redfocus:tipo ==='egresoOperacion'}" type="text" class="agregar_descripcion"
+        name="descripcionInput" [(ngModel)]="descripcionInput" placeholder="Agregar Descripción" required>
 
-          <input [ngClass]="{redfocus:tipo ==='egresoOperacion'}"
-          type="number" class="agregar_valor"
-          name="valorInput"
-          [(ngModel)] = "valorInput"
-          placeholder="Valor"
-          required>
-          <!--El type="submit" hace que reconozca el enter
+      <!--ngModel permite el two-way binding para que guarde el
+          contenido del input como valor de la variable-->
+      <input [ngClass]="{redfocus:tipo ==='egresoOperacion'}" type="number" class="agregar_valor" name="valorInput"
+        [(ngModel)]="valorInput" placeholder="Valor" required>
+      <!--El type="submit" hace que reconozca el enter
               cuando se capturen los datos-->
-          <button type="submit" class="agregar_btn">
-            <i [ngClass]="{red:tipo ==='egresoOperacion'}"
-            class="ion-ios-checkmark-outline">
-            </i>
-          </button>
-      </div>
+      <button type="submit" class="agregar_btn">
+        <i [ngClass]="{red:tipo ==='egresoOperacion'}" class="ion-ios-checkmark-outline">
+        </i>
+      </button>
+    </div>
   </div>
 </form>
