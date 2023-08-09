@@ -12,9 +12,13 @@ export class IngresoServicio{
   ];
 
   //Elimina del arreglo el ingreso que recibe como parámetro.
-  eliminar(ingreso: Ingreso){
+  eliminarIngreso(ingreso: Ingreso){
     const indice: number = this.ingresos.indexOf(ingreso);
     this.ingresos.splice(indice, 1)
+  }
+
+  agregarIngreso(descripcion: string, valor: number){
+    this.ingresos.push(new Ingreso(descripcion, valor));
   }
 
 }
