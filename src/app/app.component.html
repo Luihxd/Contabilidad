@@ -8,7 +8,9 @@
 [porcentajeTotal]="getPorcentajeTotal()"
 ></app-cabecero>
 
-<app-formulario></app-formulario>
+<app-formulario
+[presupuestoTotal]="getPresupuestoTotal()">
+</app-formulario>
 
   <div class="contenedor limpiarEstilos">
       <app-ingreso></app-ingreso>
