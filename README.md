@@ -1,4 +1,4 @@
-# PresupuestoApp
+# ContabilidadApp
 
 Esta aplicación permite al usuario ver el presupuesto que tiene tomando en cuenta los ingresos y los egresos realizados, además de mostrarle la lista de ingresos y egresos (al iniciar el servidor, hay una lista ya predefinida de cada uno) y le da la posibilidad al usuario de borrarlos. Asímismo, muestra el porcentaje de los egresos con respecto a los ingreos y el procentaje de cada uno de ellos en la lista. 
 
