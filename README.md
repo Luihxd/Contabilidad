@@ -1,32 +1,18 @@
-<<<<<<< HEAD
 # PresupuestoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+Esta aplicación permite al usuario ver el presupuesto que tiene tomando en cuenta los ingresos y los egresos realizados, además de mostrarle la lista de ingresos y egresos (al iniciar el servidor, hay una lista ya predefinida de cada uno) y le da la posibilidad al usuario de borrarlos. Asímismo, muestra el porcentaje de los egresos con respecto a los ingreos y el procentaje de cada uno de ellos en la lista. 
 
-## Development server
+También tiene un formulario para que el usuario agregue ingresos o egresos(estos últimos deben estar dentro del presupuesto porque representan gastos).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![image](https://github.com/Luihxd/Contabilidad/assets/83924924/17578e95-b582-42b7-b941-062d789234ec)
 
-## Code scaffolding
+Este proyecto se creó con Angular [Angular CLI](https://github.com/angular/angular-cli) versión 16.2.0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configurar la aplicación para usarla.
+1- Descarga el código del proyecto.
 
-## Build
+2- Corre el comando `npm install` para descargar todas las librerías necesarias para abrir el servidor.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3- Corre el comando `ng serve` para abrir un servidor de prueba. En el navegador ve al link `http://localhost:4200/`.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Contabilidad
-Proyecto de contabilidad
->>>>>>> c592882fa95832b21454a83621f38b7beb6f1654
